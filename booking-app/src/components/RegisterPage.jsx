@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate instead of Redirect
+import { useNavigate , Link} from 'react-router-dom'; // Import useNavigate instead of Redirect
 import { register } from '../actions/authActions';
 
 const RegisterPage = () => {
@@ -55,6 +55,8 @@ const RegisterPage = () => {
         </div>
         <button type="submit">Register</button>
       </form>
+      <p>Have an account? <Link to="/login">Login</Link></p>
+
     </div>
   );
 };
